@@ -1,6 +1,6 @@
 # MusicAWSLambda
 
-This is a serverless application deployed on AWS Lambda that generates music from a txt file. This is the back-end of the corresponding music generation website, where users can input text (the written notes) and a tempo for the music. The project includes the following files and folders:
+This is a serverless application deployed on AWS Lambda that generates music from a txt file. This is the back-end of the corresponding music generation [website]([url](http://musicgeneratorbucket.s3-website-us-east-1.amazonaws.com/)), where users can input text (the written notes) and a tempo for the music. The project includes the following files and folders:
 
 - hello_world - Code for the application's Lambda function.
   - `app.py`: contains the Lambda function code
@@ -10,14 +10,16 @@ This is a serverless application deployed on AWS Lambda that generates music fro
   - `requirements.txt`: Lists the required packages and dependencies for the application.
 - `template.yaml` - A template that defines the application's AWS resources.
 
-The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project.
+The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project.<br>
+<br>
 
 ## Description of Music Generator Function
 Generates a music mp3 from a txt file input. Note that notes must be typed in this format: 
 A4_dotted_quarter, for instance. Flats would be Ab, whereas sharps use the word sharp, as in A_sharp4_dotted_eighth. 
 Additionally, notes should be separated by commas and a space; returns/line indents are not supported. 
 Example accepted input: "C4_dotted_quarter, Bb5_whole, eighth_rest, G_sharp3_sixteenth". If a note input, for whatever reason, fails, a short rest (silence) will be present in the mp3 file instead. 
-Note that (as can be found in note_frequency.csv) the note range is from C0 to B8. C4 is middle C. 
+Note that (as can be found in note_frequency.csv) the note range is from C0 to B8. C4 is middle C. <br>
+<br>
 
 ## Tests
 
