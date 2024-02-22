@@ -1,6 +1,6 @@
 # MusicAWSLambda
 
-This is a serverless application deployed on AWS Lambda that generates music from a txt file. This is the back-end of the corresponding music generation [website]([url](http://musicgeneratorbucket.s3-website-us-east-1.amazonaws.com/)), where users can input text (the written notes) and a tempo for the music. The project includes the following files and folders:
+This is a serverless application deployed on AWS Lambda that generates music from a txt file. This is the back-end of the corresponding music generation [website](http://musicgeneratorbucket.s3-website-us-east-1.amazonaws.com/), where users can input text (the written notes) and a tempo for the music. The project includes the following files and folders:
 
 - hello_world - Code for the application's Lambda function.
   - `app.py`: contains the Lambda function code
